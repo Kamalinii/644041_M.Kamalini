@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Community Event Portal</h1>
+  <form id="registrationForm">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <select name="event" id="eventSelect"></select>
+    <button type="submit">Register</button>
+  </form>
+  <div id="eventsContainer"></div>
+  <div id="loading" style="display: none;">Loading...</div>
+</body>
+</html>

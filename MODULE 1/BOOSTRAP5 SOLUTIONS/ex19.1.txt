@@ -1,0 +1,25 @@
+# Step 1: Initialize project
+npm init -y
+
+# Step 2: Install Bootstrap and Sass
+npm install bootstrap sass
+
+# Step 3: Create folders
+mkdir scss css
+
+# Step 4: Import Bootstrap source in scss/main.scss
+// Import only what you need or the full bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+npx sass scss/main.scss css/main.css
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Sass Bootstrap</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="p-4">
+  <button class="btn btn-primary">Sass Compiled Button</button>
+</body>
+</html>

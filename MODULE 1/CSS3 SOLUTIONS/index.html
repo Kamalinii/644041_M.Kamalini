@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* 1. Set background color for the body */
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* 4. Color & Background Styling */
+      background: url('https://via.placeholder.com/1500x800') no-repeat center center fixed;
+      background-color: #e0f7fa; /* fallback color */
+      background-size: cover;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* 1. Universal selector to reset margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 1. Style for all h2 elements */
+    h2 {
+      color: darkblue;
+      margin: 10px;
+      /* 4. Color & Background Styling */
+      background: linear-gradient(to right, #2196F3, #21CBF3);
+      color: white;
+      padding: 10px;
+    }
+
+    /* 1. Style for the main banner */
+    #mainHeader {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* 1. Style for event containers */
+    .eventCard {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px;
+      background-color: #ffffff;
+      /* 8. Box Model & Layout Control */
+      margin: 20px;
+      padding: 15px;
+      border: 2px solid #2196F3;
+      outline: 2px dashed #f44336;
+      background-color: #e3f2fd;
+    }
+
+    /* 1. Grouping selector for h3 and p */
+    h3, p {
+      margin: 10px;
+    }
+
+    /* 1. Style for main CTA button */
+    .cta-button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* 5. Typography: Fonts and Text */
+    body, p {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .description {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 300;
+      text-align: justify;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+    }
+
+    /* 6. Link and List Styling */
+    a:link {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #003366;
+      text-decoration: underline;
+    }
+    a:active {
+      color: red;
+    }
+    a:visited {
+      color: purple;
+    }
+
+    ul.nav-menu {
+      list-style-type: none;
+      list-style-position: inside;
+      padding: 10px;
+    }
+
+    ul.nav-menu li {
+      padding: 5px 0;
+      margin: 3px 0;
+    }
+
+    /* 7. Table Styling */
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e0f7fa;
+    }
+
+    /* 8. Box Model & Layout Control - Form Focus */
+    .form-input:focus {
+      outline: 2px solid #4CAF50;
+    }
+
+    /* 8. Visibility and Display */
+    .hidden {
+      visibility: hidden;
+    }
+
+    .none {
+      display: none;
+    }
+
+    /* 9. Multiple Columns in Text */
+    .news-article {
+      column-count: 2;
+      column-gap: 30px;
+      column-rule: 1px solid gray;
+      margin: 20px;
+      font-size: 16px;
+    }
+
+    /* 10. Responsive Web Design with Media Queries */
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      gap: 20px;
+      padding: 0;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    img.responsive-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      body {
+        font-size: 14px;
+      }
+
+      .news-article {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: red;">Welcome to the Local Community Event Portal</h1>
+
+  <div id="mainHeader">
+    <h2>Main Event Banner</h2>
+  </div>
+
+  <div class="eventCard">
+    <h3>Community Meetup</h3>
+    <p>Join us for a fun and engaging community meetup at the local park!</p>
+    <a href="#" class="cta-button">Register Now</a>
+  </div>
+
+  <h2>City Council Event Branding</h2>
+
+  <p class="description">
+    Welcome to the local community portal! This page features styled content using CSS3 with colors, fonts, and layouts based on the city council’s design system.
+  </p>
+
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Events</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tree Plantation</td>
+        <td>June 5</td>
+        <td>Central Park</td>
+      </tr>
+      <tr>
+        <td>Food Drive</td>
+        <td>June 10</td>
+        <td>City Hall</td>
+      </tr>
+      <tr>
+        <td>Art Workshop</td>
+        <td>June 15</td>
+        <td>Community Center</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="eventCard">
+    <h3>Annual Marathon</h3>
+    <p>Join us for the city's biggest marathon event. Enjoy music, refreshments, and more!</p>
+  </div>
+
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" class="form-input"><br><br>
+  </form>
+
+  <p class="hidden">This text is hidden (takes space).</p>
+  <p class="none">This text is not displayed (no space).</p>
+
+  <section class="news-article">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula eget lorem tincidunt euismod.
+    Aliquam in velit nec sapien suscipit fringilla. Phasellus bibendum ut nulla in tincidunt. Quisque ut turpis orci.
+    Nam vitae tortor in orci hendrerit facilisis. Etiam in ex eget erat commodo tincidunt at nec justo.</p>
+  </section>
+
+  <nav>
+    <ul>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="https://via.placeholder.com/600x300" alt="Sample Event" class="responsive-img">
+
+</body>
+</html>
